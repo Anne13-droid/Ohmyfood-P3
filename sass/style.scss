@@ -93,23 +93,23 @@ footer{
         position: absolute;
         right: 5px; 
         bottom: 20px;  
-        transition: all 1s;
+        transition: all 0.5s;
         &:hover{             
         background: $hearts;
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-       animation: heart 2s linear forwards;
-       transform: scale(0) rotate(0);
+       animation: heart 1s linear forwards;
+       transform: scale(0);
     }
     @keyframes heart {
         to{
-            transform: scale(1.2) rotate(0deg);
+            transform: scale(1.2) ;
             -webkit-text-stroke: 0px;
             opacity: 1.5;
         }
         from{
-            transform: scale(0) rotate(360deg);
+            transform: scale(0);
             -webkit-text-stroke: 0px;
             opacity: 0.5;
         }
